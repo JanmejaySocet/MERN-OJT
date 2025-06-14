@@ -23,6 +23,10 @@ db.collcmdOJT.find({},{"name":1,"lname":1})
 db.collcmdOJT.find({},{"address":0})
 
 
+
+db.testOJT.insertOne({"name":"maharshi", "surname": "Patel"})
+
+
 db.collcmdOJT.updateOne({"lname":"patel"},{$set:{"address":"naroda"}})
 db.collcmdOJT.updateOne({"lname":"shah"},{$set:{"name":"heet","lname":"shah"}},{upsert:true})
 db.collcmdOJT.updateMany({},{$inc:{"age":19}})
@@ -54,6 +58,17 @@ db.collcmdOJT.deleteOne({"lname":"shah"})
 db.collcmdOJT.find({$and:[{age:{$ne:22}},{age:{$exists:true}}]})
 
 
+db.createCollection("testOJT")
 
 
+db.testOJT.aggregate([{ $match: {$or: [{ score: { $gt: 70, $lt: 90}}, { views:{$gte:1000}}]}},{$group:{_id:null, count:{$sum:1}}}]);
 
+db.orders.aggregate([
+{
+$lookup:
+{
+from: "inventory",
+localField: "item",
+foreignField: "sku",
+as: "inventory_docs"
+}}])
