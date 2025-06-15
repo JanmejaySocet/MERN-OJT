@@ -49,6 +49,7 @@ db.collcmdOJT.find({name:{$in:[/^ja/i,/^m/]}})
 db.collcmdOJT.find({name:{$in:[/g$/i,/m$/]}}) 
 
 
+
 db.collcmdOJT.find({}).sort({"name":-1})
 db.collcmdOJT.find({}).sort({"name":1})
 db.collcmdOJT.find({}).limit(2)
