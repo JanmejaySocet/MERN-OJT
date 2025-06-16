@@ -6,7 +6,15 @@ npm install/i -g create-react-app
 <!-- create app -->
 create-react-app App-name
 
+cd App-name
+npm start
 
+<!-- to download all dependencies -->
+<!-- delete node modules before sharing -->
+npm i 
+
+
+npm i react-router-dom
 
 
 <!-- mongodb shell cmd -->
