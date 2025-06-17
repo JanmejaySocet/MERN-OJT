@@ -10,7 +10,7 @@ import Nopage from './Nopage.jsx'
 const App = () => {
 
   return (
-  
+  <>
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home />} />
@@ -19,7 +19,7 @@ const App = () => {
       <Route path="*" element={<Nopage/>} />
     </Routes>
     </BrowserRouter>
-    
+    </>
   
   
 
