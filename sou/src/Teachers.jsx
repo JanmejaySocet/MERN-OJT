@@ -14,11 +14,16 @@ const Teachers = () => {
             <Navbar />
             <h1>Teachers</h1>
             <p>List of teachers will be displayed here.</p>
-            <h1>{teachers.map((teacher, index) => (
+            {/* <h1>{teachers.map((teacher, index) => (
                     <li key={index}>
-                        {teacher.name} - {teacher.subject}
+                        {teacher[0].name} - {teacher[0].subject}
                     </li>
-                ))}</h1>
+                ))}</h1> */}
+             
+            
+            <p>{teachers[0].name} - {teachers[0].subject}</p>
+            <p>{teachers[1].name} - {teachers[1].subject}</p>
+           
             <Footer />
         </>
     );
