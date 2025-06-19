@@ -54,6 +54,7 @@ const Footer = () => {
         <li style={{margin:"10px 0px"}}><a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" style={{ color: "#fff", textDecoration: "none" }}><i class="fa-brands fa-facebook"></i> Facebook</a></li>
         <li style={{margin:"10px 0px"}}><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" style={{ color: "#fff", textDecoration: "none" }}><i class="fa-brands fa-linkedin"></i> Linkedin</a></li>
         <li style={{margin:"10px 0px"}}><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" style={{ color: "#fff", textDecoration: "none" }}><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+
       </ul>
     </div>
 
