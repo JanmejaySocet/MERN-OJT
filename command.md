@@ -21,6 +21,9 @@ npm i react-router-dom
 db.collcmdOJT.find({"lname":"patel"})
 
 
+npm install express
+
+
 use dbname
 show collections
 db.createCollection("collname")
