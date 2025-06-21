@@ -17,6 +17,7 @@ npm i
 npm i react-router-dom
 
 
+
 <!-- mongodb shell cmd -->
 db.collcmdOJT.find({"lname":"patel"})
 
