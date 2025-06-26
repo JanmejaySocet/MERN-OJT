@@ -5,8 +5,6 @@ import Holidays from './Holidays.jsx'
 import Nopage from './Nopage.jsx'
 
 
-
-
 const App = () => {
 
   return (
